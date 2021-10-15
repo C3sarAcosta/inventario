@@ -13,4 +13,16 @@ class ProductoController extends GetxController {
     //Cambiamos el valor de la propiedad
     this.existeProducto.value = true;
   }
+
+  void cambiarPrecio(int pPrecio) {
+    this.producto.update((val) {
+      val!.precio = pPrecio;
+    });
+  }
+
+  void cambiarCantidad(int pCantidad) {
+    this.producto.update((val1) {
+      val1!.cantidad = pCantidad;
+    });
+  }
 }

@@ -27,12 +27,16 @@ class ModProductoPage extends StatelessWidget {
             MaterialButton(
               color: Colors.blueGrey,
               child: Text('Modificar Precio'),
-              onPressed: () {},
+              onPressed: () {
+                productoCtrl.cambiarPrecio(800);
+              },
             ),
             MaterialButton(
               color: Colors.blueGrey,
               child: Text('Modificar Cantidad'),
-              onPressed: () {},
+              onPressed: () {
+                productoCtrl.cambiarCantidad(500);
+              },
             ),
             MaterialButton(
               color: Colors.blueGrey,

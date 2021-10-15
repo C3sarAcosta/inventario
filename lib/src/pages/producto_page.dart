@@ -35,7 +35,7 @@ class NoProducto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('nO EXISTE PRODUCTO'),
+      child: Text('No existe producto'),
     );
   }
 }
@@ -58,10 +58,10 @@ class InformacionProducto extends StatelessWidget {
             title: Text('Nombre del producto: ${this.producto.nombre}'),
           ),
           ListTile(
-            title: Text('Precio del producto'),
+            title: Text('Precio del producto ${this.producto.precio}'),
           ),
           ListTile(
-            title: Text('Cantidad del producto'),
+            title: Text('Cantidad del producto ${this.producto.cantidad}'),
           ),
           ListTile(
             title: Text('Categorias del producto'),
