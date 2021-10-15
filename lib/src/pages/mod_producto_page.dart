@@ -41,7 +41,10 @@ class ModProductoPage extends StatelessWidget {
             MaterialButton(
               color: Colors.blueGrey,
               child: Text('Agregar Categoria'),
-              onPressed: () {},
+              onPressed: () {
+                productoCtrl.agregarCategoria(
+                    'Categoria #${productoCtrl.producto.value.categorias.length}');
+              },
             ),
           ],
         ),

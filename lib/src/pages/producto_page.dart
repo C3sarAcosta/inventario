@@ -63,9 +63,13 @@ class InformacionProducto extends StatelessWidget {
           ListTile(
             title: Text('Cantidad del producto ${this.producto.cantidad}'),
           ),
-          ListTile(
-            title: Text('Categorias del producto'),
-          ),
+          Divider(),
+          //... Sprep
+          ...producto.categorias.map(
+            (e) => ListTile(
+              title: Text(e),
+            ),
+          )
         ],
       ),
     );

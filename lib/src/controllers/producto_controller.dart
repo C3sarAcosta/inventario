@@ -20,6 +20,12 @@ class ProductoController extends GetxController {
     });
   }
 
+  void agregarCategoria(String pCategoria) {
+    this.producto.update((val) {
+      val!.categorias = [...val.categorias, pCategoria];
+    });
+  }
+
   void cambiarCantidad(int pCantidad) {
     this.producto.update((val1) {
       val1!.cantidad = pCantidad;
